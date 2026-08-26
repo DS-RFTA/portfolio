@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Renata Félix Trajano de Araújo — Data & Analytics | Machine Learning | AI</title>
+<meta name="description" content="Portfólio profissional de Renata Félix Trajano de Araújo — Dados, Analytics, Machine Learning e Inteligência Artificial. Python, SQL, Power BI, ETL, IA Generativa.">
+<meta name="author" content="Renata Félix Trajano de Araújo">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://ds-rfta.github.io/portfolio/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Renata Félix Trajano de Araújo — Data & Analytics | Machine Learning | AI">
+<meta property="og:description" content="Transformando dados em indicadores, automação e decisões. Portfólio de Dados, Analytics, Machine Learning e IA.">
+<meta property="og:url" content="https://ds-rfta.github.io/portfolio/">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:image" content="assets/img/og-cover.png">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Renata Félix Trajano de Araújo — Data & Analytics | ML | AI">
+<meta name="twitter:description" content="Portfólio de Dados, Analytics, Machine Learning e Inteligência Artificial.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%2310131C'/%3E%3Ctext x='50' y='68' font-size='60' text-anchor='middle' fill='%23C9A227' font-family='monospace'%3ER%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Renata Félix Trajano de Araújo",
+  "jobTitle": "Data & Analytics | Machine Learning | Artificial Intelligence",
+  "url": "https://ds-rfta.github.io/portfolio/",
+  "sameAs": [
+    "https://www.linkedin.com/in/renataft-araujo",
+    "https://github.com/DS-RFTA"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Recife",
+    "addressRegion": "PE",
+    "addressCountry": "BR"
+  },
+  "knowsAbout": ["Data Analytics", "Machine Learning", "Artificial Intelligence", "Python", "SQL", "Power BI", "ETL", "Cloud Computing"]
+}
+</script>
+
+<style>
+  :root{
+    --ink:#10131C;
+    --ink-2:#171B27;
+    --ink-3:#1F2433;
+    --paper:#F7F5EF;
+    --paper-2:#EEEBE1;
+    --paper-3:#E3E0D3;
+    --gold:#C9A227;
+    --gold-soft:#C9A22730;
+    --teal:#3E8E7E;
+    --text-dark:#E9E7DE;
+    --text-dark-dim:#A7A594;
+    --text-light:#1B1E29;
+    --text-light-dim:#5B5E6B;
+    --danger:#C25450;
+    --radius:2px;
+    --maxw:1180px;
+    --serif:'Fraunces', Georgia, serif;
+    --sans:'Inter', -apple-system, sans-serif;
+    --mono:'IBM Plex Mono', monospace;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} *{animation-duration:0.01ms !important; transition-duration:0.01ms !important;} }
+
+  body{
+    font-family:var(--sans);
+    background:var(--ink);
+    color:var(--text-dark);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    transition:background .3s ease, color .3s ease;
+  }
+  body.light{ background:var(--paper); color:var(--text-light); }
+
+  ::selection{ background:var(--gold); color:var(--ink); }
+
+  a{ color:inherit; text-decoration:none; }
+  ul{ list-style:none; }
+  img{ max-width:100%; display:block; }
+
+  :focus-visible{ outline:2px solid var(--gold); outline-offset:3px; }
+
+  .wrap{ max-width:var(--maxw); margin:0 auto; padding:0 24px; }
+
+  /* language toggling */
+  .lang-en{ display:none; }
+  .lang-en-inline{ display:none; }
+  body.is-en .lang-en{ display:block; }
+  body.is-en .lang-en-inline{ display:inline; }
+  body.is-en .lang-pt{ display:none; }
+  body.is-en .lang-pt-inline{ display:none; }
+
+  /* ---------- Nav ---------- */
+  header.nav{
+    position:sticky; top:0; z-index:100;
+    background:rgba(16,19,28,0.88);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--gold-soft);
+    transition:background .3s ease, border-color .3s ease;
+  }
+  body.light header.nav{ background:rgba(247,245,239,0.9); }
+
+  .nav-inner{ display:flex; align-items:center; justify-content:space-between; padding:16px 24px; max-width:var(--maxw); margin:0 auto; }
+  .nav-logo{ font-family:var(--mono); font-size:0.9rem; letter-spacing:0.05em; }
+  .nav-logo b{ color:var(--gold); font-weight:500; }
+
+  .nav-links{ display:flex; gap:28px; align-items:center; }
+  .nav-links a{ font-size:0.88rem; letter-spacing:0.02em; opacity:0.8; transition:opacity .2s; position:relative; }
+  .nav-links a:hover{ opacity:1; }
+  .nav-links a.active{ opacity:1; color:var(--gold); }
+
+  .nav-controls{ display:flex; align-items:center; gap:10px; }
+  .nav-btn{
+    font-family:var(--mono); font-size:0.75rem; letter-spacing:0.05em;
+    border:1px solid var(--gold-soft); background:transparent; color:inherit;
+    padding:6px 10px; border-radius:var(--radius); cursor:pointer;
+    transition:border-color .2s, background .2s;
+  }
+  .nav-btn:hover{ border-color:var(--gold); background:var(--gold-soft); }
+
+  .nav-toggle{ display:none; background:none; border:none; color:inherit; cursor:pointer; }
+  .nav-toggle svg{ width:24px; height:24px; }
+
+  @media (max-width: 860px){
+    .nav-links{
+      position:fixed; inset:64px 0 0 0; background:var(--ink); flex-direction:column;
+      padding:32px 24px; gap:22px; transform:translateX(100%); transition:transform .3s ease;
+      align-items:flex-start; overflow-y:auto;
+    }
+    body.light .nav-links{ background:var(--paper); }
+    .nav-links.open{ transform:translateX(0); }
+    .nav-toggle{ display:block; }
+    .nav-links a{ font-size:1.1rem; }
+  }
+
+  /* ---------- Eyebrow / cell labels ---------- */
+  .eyebrow{
+    font-family:var(--mono); font-size:0.72rem; letter-spacing:0.12em; text-transform:uppercase;
+    color:var(--gold); display:inline-flex; align-items:center; gap:8px; margin-bottom:14px;
+  }
+  .eyebrow::before{ content:''; width:16px; height:1px; background:var(--gold); }
+
+  section{ padding:96px 0; border-bottom:1px solid var(--gold-soft); scroll-margin-top:76px; }
+  @media (max-width:700px){ section{ padding:64px 0; } }
+
+  h1,h2,h3{ font-family:var(--serif); font-weight:500; letter-spacing:-0.01em; }
+  h2{ font-size:clamp(1.8rem, 3.2vw, 2.6rem); margin-bottom:8px; }
+  .section-sub{ color:var(--text-dark-dim); max-width:560px; margin-bottom:48px; font-size:1rem; }
+  body.light .section-sub{ color:var(--text-light-dim); }
+
+  /* ---------- Hero ---------- */
+  .hero{ padding:120px 0 96px; border-bottom:1px solid var(--gold-soft); position:relative; overflow:hidden; }
+  .hero-grid{
+    position:absolute; inset:0; z-index:0; opacity:0.5;
+    background-image:
+      linear-gradient(var(--gold-soft) 1px, transparent 1px),
+      linear-gradient(90deg, var(--gold-soft) 1px, transparent 1px);
+    background-size:64px 64px;
+    mask-image:radial-gradient(ellipse at top left, black, transparent 70%);
+  }
+  .hero-content{ position:relative; z-index:1; max-width:760px; }
+  .hero h1{ font-size:clamp(2.4rem, 5.4vw, 4rem); line-height:1.05; margin-bottom:18px; }
+  .hero h1 .accent{ color:var(--gold); font-style:italic; }
+  .hero-role{ font-family:var(--mono); font-size:0.95rem; letter-spacing:0.03em; color:var(--teal); margin-bottom:22px; }
+  .hero-sub{ font-size:1.15rem; max-width:540px; color:var(--text-dark-dim); margin-bottom:36px; }
+  body.light .hero-sub{ color:var(--text-light-dim); }
+
+  .cta-row{ display:flex; gap:14px; flex-wrap:wrap; }
+  .btn{
+    font-family:var(--sans); font-weight:500; font-size:0.92rem;
+    padding:13px 22px; border-radius:var(--radius); border:1px solid transparent; cursor:pointer;
+    display:inline-flex; align-items:center; gap:8px; transition:transform .15s ease, background .2s, border-color .2s;
+  }
+  .btn:hover{ transform:translateY(-1px); }
+  .btn-primary{ background:var(--gold); color:var(--ink); }
+  .btn-primary:hover{ background:#DDB53A; }
+  .btn-ghost{ border-color:var(--gold-soft); color:inherit; }
+  .btn-ghost:hover{ border-color:var(--gold); }
+
+  .hero-meta{ margin-top:56px; display:flex; gap:32px; flex-wrap:wrap; font-family:var(--mono); font-size:0.8rem; color:var(--text-dark-dim); }
+  body.light .hero-meta{ color:var(--text-light-dim); }
+
+  /* ---------- About ---------- */
+  .about-layout{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:56px; align-items:start; }
+  @media (max-width:820px){ .about-layout{ grid-template-columns:1fr; } }
+  .about-text p{ margin-bottom:16px; color:var(--text-dark-dim); font-size:1.02rem; }
+  body.light .about-text p{ color:var(--text-light-dim); }
+  .about-text strong{ color:var(--text-dark); font-weight:600; }
+  body.light .about-text strong{ color:var(--text-light); }
+
+  .fact-card{ border:1px solid var(--gold-soft); padding:24px; border-radius:var(--radius); }
+  .fact-card .fact-row{ display:flex; justify-content:space-between; padding:10px 0; border-bottom:1px solid var(--gold-soft); font-size:0.9rem; }
+  .fact-card .fact-row:last-child{ border-bottom:none; }
+  .fact-row span:first-child{ color:var(--text-dark-dim); font-family:var(--mono); font-size:0.78rem; text-transform:uppercase; letter-spacing:0.04em; }
+  body.light .fact-row span:first-child{ color:var(--text-light-dim); }
+
+  /* ---------- Impact / metrics grid (signature: spreadsheet ledger) ---------- */
+  .ledger{ display:grid; grid-template-columns:repeat(4, 1fr); border:1px solid var(--gold-soft); border-radius:var(--radius); overflow:hidden; }
+  @media (max-width:820px){ .ledger{ grid-template-columns:repeat(2,1fr); } }
+  .ledger-cell{ padding:32px 24px; border-right:1px solid var(--gold-soft); border-bottom:1px solid var(--gold-soft); }
+  .ledger-cell:nth-child(4n){ border-right:none; }
+  @media (max-width:820px){ .ledger-cell:nth-child(2n){ border-right:none; } .ledger-cell:nth-child(4n){ border-right:1px solid var(--gold-soft); } }
+  .ledger-ref{ font-family:var(--mono); font-size:0.7rem; color:var(--teal); letter-spacing:0.06em; margin-bottom:14px; display:block; }
+  .ledger-value{ font-family:var(--serif); font-size:2.4rem; color:var(--gold); line-height:1; margin-bottom:10px; }
+  .ledger-label{ font-size:0.86rem; color:var(--text-dark-dim); }
+  body.light .ledger-label{ color:var(--text-light-dim); }
+
+  /* ---------- Stack ---------- */
+  .stack-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:1px; background:var(--gold-soft); border:1px solid var(--gold-soft); }
+  @media (max-width:760px){ .stack-grid{ grid-template-columns:1fr; } }
+  .stack-col{ background:var(--ink); padding:28px; }
+  body.light .stack-col{ background:var(--paper); }
+  .stack-col h3{ font-size:1rem; font-family:var(--mono); text-transform:uppercase; letter-spacing:0.05em; color:var(--teal); margin-bottom:16px; font-weight:500; }
+  .stack-col ul li{ padding:6px 0; font-size:0.92rem; border-bottom:1px dashed var(--gold-soft); }
+  .stack-col ul li:last-child{ border-bottom:none; }
+
+  /* ---------- Projects ---------- */
+  .filters{ display:flex; gap:10px; flex-wrap:wrap; margin-bottom:40px; }
+  .filter-btn{
+    font-family:var(--mono); font-size:0.76rem; letter-spacing:0.03em; text-transform:uppercase;
+    padding:8px 14px; border:1px solid var(--gold-soft); border-radius:var(--radius); background:transparent; color:inherit; cursor:pointer;
+    transition:all .2s;
+  }
+  .filter-btn:hover{ border-color:var(--gold); }
+  .filter-btn.active{ background:var(--gold); color:var(--ink); border-color:var(--gold); }
+
+  .project-grid{ display:grid; grid-template-columns:repeat(2, 1fr); gap:24px; }
+  @media (max-width:760px){ .project-grid{ grid-template-columns:1fr; } }
+
+  .project-card{
+    border:1px solid var(--gold-soft); border-radius:var(--radius); padding:28px; display:flex; flex-direction:column; gap:14px;
+    transition:border-color .2s, transform .2s; opacity:0; transform:translateY(14px);
+  }
+  .project-card.visible{ opacity:1; transform:translateY(0); }
+  .project-card:hover{ border-color:var(--gold); }
+  .project-card.hidden{ display:none; }
+
+  .project-top{ display:flex; justify-content:space-between; align-items:flex-start; gap:12px; }
+  .project-cat{ font-family:var(--mono); font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--teal); }
+  .project-card h3{ font-size:1.25rem; }
+  .project-card p{ color:var(--text-dark-dim); font-size:0.94rem; }
+  body.light .project-card p{ color:var(--text-light-dim); }
+  .project-tags{ display:flex; flex-wrap:wrap; gap:8px; }
+  .tag{ font-family:var(--mono); font-size:0.7rem; padding:3px 8px; border:1px solid var(--gold-soft); border-radius:var(--radius); color:var(--text-dark-dim); }
+  body.light .tag{ color:var(--text-light-dim); }
+  .project-link{ font-family:var(--mono); font-size:0.8rem; color:var(--gold); margin-top:auto; display:inline-flex; align-items:center; gap:6px; }
+  .project-link:hover{ text-decoration:underline; }
+  .featured-badge{ font-family:var(--mono); font-size:0.65rem; background:var(--gold); color:var(--ink); padding:3px 8px; border-radius:var(--radius); text-transform:uppercase; letter-spacing:0.05em; }
+
+  /* ---------- Experience timeline ---------- */
+  .timeline{ position:relative; padding-left:28px; border-left:1px solid var(--gold-soft); }
+  .tl-item{ position:relative; padding-bottom:44px; opacity:0; transform:translateY(14px); transition:opacity .5s, transform .5s; }
+  .tl-item.visible{ opacity:1; transform:translateY(0); }
+  .tl-item:last-child{ padding-bottom:0; }
+  .tl-item::before{ content:''; position:absolute; left:-33px; top:4px; width:9px; height:9px; border-radius:50%; background:var(--gold); }
+  .tl-head{ display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; margin-bottom:6px; }
+  .tl-role{ font-family:var(--serif); font-size:1.2rem; }
+  .tl-period{ font-family:var(--mono); font-size:0.78rem; color:var(--teal); white-space:nowrap; }
+  .tl-org{ color:var(--text-dark-dim); font-size:0.92rem; margin-bottom:12px; }
+  body.light .tl-org{ color:var(--text-light-dim); }
+  .tl-item ul{ display:flex; flex-direction:column; gap:6px; }
+  .tl-item ul li{ font-size:0.92rem; color:var(--text-dark-dim); padding-left:16px; position:relative; }
+  body.light .tl-item ul li{ color:var(--text-light-dim); }
+  .tl-item ul li::before{ content:'—'; position:absolute; left:0; color:var(--gold-soft); }
+
+  /* ---------- Education / Certs ---------- */
+  .two-col{ display:grid; grid-template-columns:1fr 1fr; gap:48px; }
+  @media (max-width:760px){ .two-col{ grid-template-columns:1fr; } }
+  .edu-item{ border-left:2px solid var(--gold); padding-left:18px; margin-bottom:28px; }
+  .edu-item:last-child{ margin-bottom:0; }
+  .edu-item h3{ font-size:1.1rem; margin-bottom:4px; }
+  .edu-item .edu-inst{ font-family:var(--mono); font-size:0.8rem; color:var(--teal); margin-bottom:4px; }
+  .edu-item p{ font-size:0.9rem; color:var(--text-dark-dim); }
+  body.light .edu-item p{ color:var(--text-light-dim); }
+
+  .lang-list{ display:flex; flex-direction:column; gap:14px; margin-top:8px; }
+  .lang-row{ display:flex; justify-content:space-between; align-items:center; padding:12px 16px; border:1px solid var(--gold-soft); border-radius:var(--radius); }
+  .lang-bar{ height:4px; width:120px; background:var(--gold-soft); border-radius:2px; overflow:hidden; }
+  .lang-bar span{ display:block; height:100%; background:var(--gold); }
+
+  /* ---------- Github ---------- */
+  .gh-card{ border:1px solid var(--gold-soft); border-radius:var(--radius); padding:32px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px; }
+  .gh-card .gh-user{ font-family:var(--mono); }
+  .gh-status{ font-family:var(--mono); font-size:0.78rem; color:var(--text-dark-dim); }
+  body.light .gh-status{ color:var(--text-light-dim); }
+
+  /* ---------- Contact ---------- */
+  .contact-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--gold-soft); border:1px solid var(--gold-soft); }
+  @media (max-width:760px){ .contact-grid{ grid-template-columns:1fr; } }
+  .contact-cell{ background:var(--ink); padding:32px; text-align:center; transition:background .2s; }
+  body.light .contact-cell{ background:var(--paper); }
+  .contact-cell:hover{ background:var(--ink-2); }
+  body.light .contact-cell:hover{ background:var(--paper-2); }
+  .contact-cell .eyebrow{ justify-content:center; }
+  .contact-cell .eyebrow::before{ display:none; }
+  .contact-cell strong{ font-family:var(--serif); font-size:1.1rem; }
+
+  footer{ padding:40px 0; text-align:center; font-family:var(--mono); font-size:0.78rem; color:var(--text-dark-dim); }
+  body.light footer{ color:var(--text-light-dim); }
+
+  .reveal{ opacity:0; transform:translateY(16px); transition:opacity .6s ease, transform .6s ease; }
+  .reveal.visible{ opacity:1; transform:translateY(0); }
+
+  .skip-link{ position:absolute; left:-999px; top:0; background:var(--gold); color:var(--ink); padding:10px 16px; z-index:200; }
+  .skip-link:focus{ left:16px; top:16px; }
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Pular para o conteúdo / Skip to content</a>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo"><b>RFTA</b> / data.ml.ai</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" data-nav><span class="lang-pt-inline">Sobre</span><span class="lang-en-inline">About</span></a>
+      <a href="#experience" data-nav><span class="lang-pt-inline">Experiência</span><span class="lang-en-inline">Experience</span></a>
+      <a href="#projects" data-nav><span class="lang-pt-inline">Projetos</span><span class="lang-en-inline">Projects</span></a>
+      <a href="#skills" data-nav><span class="lang-pt-inline">Skills</span><span class="lang-en-inline">Skills</span></a>
+      <a href="#education" data-nav><span class="lang-pt-inline">Formação</span><span class="lang-en-inline">Education</span></a>
+      <a href="#contact" data-nav><span class="lang-pt-inline">Contato</span><span class="lang-en-inline">Contact</span></a>
+    </nav>
+    <div class="nav-controls">
+      <button class="nav-btn" id="langToggle" aria-label="Switch language">EN</button>
+      <button class="nav-btn" id="themeToggle" aria-label="Alternar tema claro/escuro">🌙</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-grid"></div>
+    <div class="wrap hero-content">
+      <p class="eyebrow">A1 · Renata Félix Trajano de Araújo</p>
+      <h1>
+        <span class="lang-pt-inline">Transformo dados em <span class="accent">indicadores</span>, automação e decisões.</span>
+        <span class="lang-en-inline">I turn data into <span class="accent">indicators</span>, automation and decisions.</span>
+      </h1>
+      <p class="hero-role">
+        <span class="lang-pt-inline">Data & Analytics · Machine Learning · Inteligência Artificial</span>
+        <span class="lang-en-inline">Data & Analytics · Machine Learning · Artificial Intelligence</span>
+      </p>
+      <p class="hero-sub">
+        <span class="lang-pt-inline">Profissional de Dados com pós-graduação em Análise de Dados e IA (CESAR School) e formação em Ciência da Computação em andamento. Experiência prática construindo indicadores, dashboards e automações que geraram resultado de negócio mensurável.</span>
+        <span class="lang-en-inline">Data professional with a postgraduate degree in Data Analysis and AI (CESAR School) and an ongoing Computer Science degree. Hands-on experience building indicators, dashboards and automations that delivered measurable business results.</span>
+      </p>
+      <div class="cta-row">
+        <a href="#projects" class="btn btn-primary"><span class="lang-pt-inline">Ver projetos</span><span class="lang-en-inline">View projects</span></a>
+        <a href="https://github.com/DS-RFTA" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+        <a href="https://www.linkedin.com/in/renataft-araujo" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+        <a href="assets/CV-Renata-Felix-Trajano-de-Araujo.pdf" target="_blank" rel="noopener" class="btn btn-ghost"><span class="lang-pt-inline">Currículo</span><span class="lang-en-inline">Resume</span></a>
+      </div>
+      <div class="hero-meta">
+        <span>📍 Recife, PE — Brasil</span>
+        <span class="lang-pt-inline">✉ Disponível para oportunidades em Dados e Tecnologia</span>
+        <span class="lang-en-inline">✉ Open to Data & Technology opportunities</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <p class="eyebrow">A2 · <span class="lang-pt-inline">Sobre</span><span class="lang-en-inline">About</span></p>
+      <h2 class="lang-pt-inline">Da operação para o dado, do dado para a decisão</h2>
+      <h2 class="lang-en-inline">From operations to data, from data to decisions</h2>
+      <div class="about-layout" style="margin-top:40px;">
+        <div class="about-text">
+          <div class="lang-pt">
+            <p>Minha trajetória começou dentro da operação — Supply Chain, Compras Internacionais e Varejo — antes de se especializar em Dados. Isso significa que eu não só sei estruturar um pipeline ou um dashboard, eu entendo <strong>o problema de negócio</strong> que está por trás do número.</p>
+            <p>Ao longo da carreira, analisei mais de <strong>1.500 SKUs em 13 pontos de venda</strong>, estruturei indicadores de ruptura, cobertura de estoque e lead time, e apoiei áreas de negócio na leitura e resolução de problemas a partir de dados.</p>
+            <p>Hoje sigo essa mesma lógica aplicada a Machine Learning e Inteligência Artificial: Python, SQL, Power BI, ETL, estatística e, mais recentemente, LLMs e Prompt Engineering — sempre com o objetivo de transformar dado bruto em decisão.</p>
+          </div>
+          <div class="lang-en">
+            <p>My path started inside operations — Supply Chain, International Purchasing and Retail — before specializing in Data. That means I don't just know how to build a pipeline or a dashboard, I understand <strong>the business problem</strong> behind the number.</p>
+            <p>Throughout my career I analyzed over <strong>1,500 SKUs across 13 points of sale</strong>, structured stockout, inventory coverage and lead-time indicators, and supported business teams in reading and solving problems from data.</p>
+            <p>Today I apply that same logic to Machine Learning and Artificial Intelligence: Python, SQL, Power BI, ETL, statistics and, more recently, LLMs and Prompt Engineering — always aiming to turn raw data into a decision.</p>
+          </div>
+        </div>
+        <div class="fact-card">
+          <div class="fact-row"><span class="lang-pt-inline">Formação</span><span class="lang-en-inline">Education</span><span>CESAR School</span></div>
+          <div class="fact-row"><span class="lang-pt-inline">Graduação</span><span class="lang-en-inline">Degree</span><span class="lang-pt-inline">Ciência da Computação</span><span class="lang-en-inline">Computer Science</span></div>
+          <div class="fact-row"><span class="lang-pt-inline">Foco</span><span class="lang-en-inline">Focus</span><span>Data · ML · AI</span></div>
+          <div class="fact-row"><span class="lang-pt-inline">Base</span><span class="lang-en-inline">Based in</span><span>Recife, PE — BR</span></div>
+          <div class="fact-row"><span class="lang-pt-inline">Idiomas</span><span class="lang-en-inline">Languages</span><span class="lang-pt-inline">PT · EN · ES</span><span class="lang-en-inline">PT · EN · ES</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT -->
+  <section id="impact">
+    <div class="wrap">
+      <p class="eyebrow">A3 · <span class="lang-pt-inline">Impacto em Dados e Negócios</span><span class="lang-en-inline">Data & Business Impact</span></p>
+      <h2 class="lang-pt-inline">Resultados comprovados no currículo</h2>
+      <h2 class="lang-en-inline">Verified results from my track record</h2>
+      <p class="section-sub lang-pt-inline">Números reais de posições anteriores em Varejo e Supply Chain.</p>
+      <p class="section-sub lang-en-inline">Real numbers from previous roles in Retail and Supply Chain.</p>
+      <div class="ledger">
+        <div class="ledger-cell">
+          <span class="ledger-ref">B1</span>
+          <div class="ledger-value">1.500+</div>
+          <div class="ledger-label lang-pt-inline">SKUs analisados</div>
+          <div class="ledger-label lang-en-inline">SKUs analyzed</div>
+        </div>
+        <div class="ledger-cell">
+          <span class="ledger-ref">B2</span>
+          <div class="ledger-value">13</div>
+          <div class="ledger-label lang-pt-inline">Pontos de venda monitorados</div>
+          <div class="ledger-label lang-en-inline">Points of sale monitored</div>
+        </div>
+        <div class="ledger-cell">
+          <span class="ledger-ref">B3</span>
+          <div class="ledger-value">+15%</div>
+          <div class="ledger-label lang-pt-inline">Faturamento (Lojão dos Games)</div>
+          <div class="ledger-label lang-en-inline">Revenue increase (Lojão dos Games)</div>
+        </div>
+        <div class="ledger-cell">
+          <span class="ledger-ref">B4</span>
+          <div class="ledger-value">98%</div>
+          <div class="ledger-label lang-pt-inline">Acuracidade de estoque</div>
+          <div class="ledger-label lang-en-inline">Inventory accuracy</div>
+        </div>
+        <div class="ledger-cell">
+          <span class="ledger-ref">B5</span>
+          <div class="ledger-value">-5%</div>
+          <div class="ledger-label lang-pt-inline">Custos operacionais</div>
+          <div class="ledger-label lang-en-inline">Operating costs</div>
+        </div>
+        <div class="ledger-cell">
+          <span class="ledger-ref">B6</span>
+          <div class="ledger-value">5</div>
+          <div class="ledger-label lang-pt-inline">Anos+ em análise de dados e operações</div>
+          <div class="ledger-label lang-en-inline">Years+ across data & operations roles</div>
+        </div>
+        <div class="ledger-cell">
+          <span class="ledger-ref">B7</span>
+          <div class="ledger-value">PBI</div>
+          <div class="ledger-label lang-pt-inline">Dashboards em Power BI e Excel</div>
+          <div class="ledger-label lang-en-inline">Dashboards in Power BI & Excel</div>
+        </div>
+        <div class="ledger-cell">
+          <span class="ledger-ref">B8</span>
+          <div class="ledger-value">SQL</div>
+          <div class="ledger-label lang-pt-inline">ETL e integração de dados</div>
+          <div class="ledger-label lang-en-inline">ETL & data integration</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS / STACK -->
+  <section id="skills">
+    <div class="wrap">
+      <p class="eyebrow">A4 · Stack</p>
+      <h2 class="lang-pt-inline">Stack técnica</h2>
+      <h2 class="lang-en-inline">Technical stack</h2>
+      <p class="section-sub lang-pt-inline">Organizada por área de aplicação, não por hype.</p>
+      <p class="section-sub lang-en-inline">Organized by application area, not by hype.</p>
+      <div class="stack-grid">
+        <div class="stack-col">
+          <h3>Data & Analytics</h3>
+          <ul>
+            <li>Python (Pandas, NumPy)</li>
+            <li>SQL</li>
+            <li>Power BI · Power Query</li>
+            <li>Excel Avançado</li>
+            <li>ETL</li>
+            <li class="lang-pt-inline">Estatística · Data Visualization</li>
+            <li class="lang-en-inline">Statistics · Data Visualization</li>
+          </ul>
+        </div>
+        <div class="stack-col">
+          <h3>Machine Learning</h3>
+          <ul>
+            <li class="lang-pt-inline">Classificação · Regressão</li>
+            <li class="lang-en-inline">Classification · Regression</li>
+            <li>Clustering</li>
+            <li class="lang-pt-inline">Avaliação de modelos</li>
+            <li class="lang-en-inline">Model evaluation</li>
+            <li class="lang-pt-inline">Pré-processamento · EDA</li>
+            <li class="lang-en-inline">Preprocessing · EDA</li>
+            <li>Scikit-learn · Matplotlib · Seaborn</li>
+          </ul>
+        </div>
+        <div class="stack-col">
+          <h3 class="lang-pt-inline">IA & Cloud</h3>
+          <h3 class="lang-en-inline">AI & Cloud</h3>
+          <ul>
+            <li class="lang-pt-inline">Inteligência Artificial Generativa</li>
+            <li class="lang-en-inline">Generative AI</li>
+            <li>LLMs · Prompt Engineering</li>
+            <li>AWS · Azure (fundamentos)</li>
+            <li>Databricks · KNIME</li>
+            <li>Big Data</li>
+            <li>Git / GitHub · Jupyter</li>
+          </ul>
+        </div>
+      </div>
+      <div class="stack-grid" style="margin-top:1px;">
+        <div class="stack-col">
+          <h3 class="lang-pt-inline">Linguagens</h3>
+          <h3 class="lang-en-inline">Languages</h3>
+          <ul><li>Python</li><li>SQL</li><li>Java</li><li>C</li></ul>
+        </div>
+        <div class="stack-col">
+          <h3 class="lang-pt-inline">Metodologias</h3>
+          <h3 class="lang-en-inline">Methodologies</h3>
+          <ul><li>Scrum</li><li>Kanban</li></ul>
+        </div>
+        <div class="stack-col">
+          <h3 class="lang-pt-inline">Governança</h3>
+          <h3 class="lang-en-inline">Governance</h3>
+          <ul><li>LGPD</li><li class="lang-pt-inline">Fundamentos de Governança de Dados</li><li class="lang-en-inline">Data Governance fundamentals</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="wrap">
+      <p class="eyebrow">A5 · <span class="lang-pt-inline">Projetos</span><span class="lang-en-inline">Projects</span></p>
+      <h2 class="lang-pt-inline">Projetos e estudos aplicados</h2>
+      <h2 class="lang-en-inline">Applied projects & studies</h2>
+      <p class="section-sub lang-pt-inline">Estrutura pensada para crescer — novos projetos entram editando um único array de dados (ver README).</p>
+      <p class="section-sub lang-en-inline">Built to scale — new projects are added by editing a single data array (see README).</p>
+
+      <div class="filters" id="filters"></div>
+      <div class="project-grid" id="projectGrid"></div>
+    </div>
+  </section>
+
+  <!-- GITHUB -->
+  <section id="github">
+    <div class="wrap">
+      <p class="eyebrow">A6 · GitHub</p>
+      <div class="gh-card">
+        <div>
+          <div class="gh-user">github.com/DS-RFTA</div>
+          <p class="gh-status" id="ghStatus">
+            <span class="lang-pt-inline">Repositórios públicos com projetos de Java, Python e processamento de dados.</span>
+            <span class="lang-en-inline">Public repositories with Java, Python and data-processing projects.</span>
+          </p>
+        </div>
+        <a href="https://github.com/DS-RFTA" target="_blank" rel="noopener" class="btn btn-primary">
+          <span class="lang-pt-inline">Ver perfil no GitHub</span><span class="lang-en-inline">View GitHub profile</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="wrap">
+      <p class="eyebrow">A7 · <span class="lang-pt-inline">Experiência</span><span class="lang-en-inline">Experience</span></p>
+      <h2 class="lang-pt-inline">Trajetória profissional</h2>
+      <h2 class="lang-en-inline">Professional experience</h2>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+
+  <!-- EDUCATION + CERTS + LANGUAGES -->
+  <section id="education">
+    <div class="wrap">
+      <p class="eyebrow">A8 · <span class="lang-pt-inline">Formação</span><span class="lang-en-inline">Education</span></p>
+      <h2 class="lang-pt-inline">Formação & Certificações</h2>
+      <h2 class="lang-en-inline">Education & Certifications</h2>
+      <div class="two-col" style="margin-top:40px;">
+        <div>
+          <div class="edu-item">
+            <h3 class="lang-pt-inline">Pós-graduação em Análise de Dados e Inteligência Artificial</h3>
+            <h3 class="lang-en-inline">Postgraduate in Data Analysis and Artificial Intelligence</h3>
+            <div class="edu-inst">CESAR School — <span class="lang-pt-inline">Concluída em 2026</span><span class="lang-en-inline">Completed 2026</span></div>
+            <p class="lang-pt-inline">Análise exploratória, Estatística, SQL, ETL, Big Data, Machine Learning, Séries Temporais, Classificação, Regressão, IA Generativa, LLMs, Deep Learning, Visualização de Dados, Storytelling, Governança de Dados e LGPD.</p>
+            <p class="lang-en-inline">Exploratory analysis, Statistics, SQL, ETL, Big Data, Machine Learning, Time Series, Classification, Regression, Generative AI, LLMs, Deep Learning, Data Visualization, Storytelling, Data Governance and LGPD.</p>
+          </div>
+          <div class="edu-item">
+            <h3 class="lang-pt-inline">Ciência da Computação</h3>
+            <h3 class="lang-en-inline">Computer Science</h3>
+            <div class="edu-inst">Centro Universitário FMU | FIAM-FAAM — <span class="lang-pt-inline">Em andamento</span><span class="lang-en-inline">In progress</span></div>
+            <p class="lang-pt-inline">Python, Java, C, Estruturas de Dados, Machine Learning, Deep Learning, Cloud Computing e Big Data.</p>
+            <p class="lang-en-inline">Python, Java, C, Data Structures, Machine Learning, Deep Learning, Cloud Computing and Big Data.</p>
+          </div>
+          <div class="edu-item">
+            <h3 class="lang-pt-inline">Formações complementares</h3>
+            <h3 class="lang-en-inline">Complementary training</h3>
+            <div class="edu-inst"><span class="lang-pt-inline">Certificações e cursos</span><span class="lang-en-inline">Certifications & courses</span></div>
+            <p class="lang-pt-inline">Ciência de Dados e Inteligência Artificial · Java · C · Python · SQL · Power BI · Excel Avançado · Automação de processos com n8n · Machine Learning · IA Generativa e LLMs.</p>
+            <p class="lang-en-inline">Data Science and Artificial Intelligence · Java · C · Python · SQL · Power BI · Advanced Excel · Process automation with n8n · Machine Learning · Generative AI and LLMs.</p>
+          </div>
+        </div>
+        <div>
+          <p class="eyebrow" style="margin-bottom:8px;"><span class="lang-pt-inline">Idiomas</span><span class="lang-en-inline">Languages</span></p>
+          <div class="lang-list">
+            <div class="lang-row">
+              <span class="lang-pt-inline">Português</span><span class="lang-en-inline">Portuguese</span>
+              <div class="lang-bar"><span style="width:100%"></span></div>
+            </div>
+            <div class="lang-row">
+              <span class="lang-pt-inline">Inglês — Intermediário</span><span class="lang-en-inline">English — Intermediate</span>
+              <div class="lang-bar"><span style="width:60%"></span></div>
+            </div>
+            <div class="lang-row">
+              <span class="lang-pt-inline">Espanhol — Avançado</span><span class="lang-en-inline">Spanish — Advanced</span>
+              <div class="lang-bar"><span style="width:85%"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" style="border-bottom:none;">
+    <div class="wrap">
+      <p class="eyebrow">A9 · <span class="lang-pt-inline">Contato</span><span class="lang-en-inline">Contact</span></p>
+      <h2 class="lang-pt-inline">Vamos conversar</h2>
+      <h2 class="lang-en-inline">Let's talk</h2>
+      <p class="section-sub lang-pt-inline">Aberta a oportunidades em Dados, Analytics, Machine Learning e IA — Brasil e internacional.</p>
+      <p class="section-sub lang-en-inline">Open to opportunities in Data, Analytics, Machine Learning and AI — Brazil and international.</p>
+      <div class="contact-grid">
+        <a class="contact-cell" href="mailto:dertrajano@gmail.com">
+          <p class="eyebrow">E-mail</p>
+          <strong>dertrajano@gmail.com</strong>
+        </a>
+        <a class="contact-cell" href="https://www.linkedin.com/in/renataft-araujo" target="_blank" rel="noopener">
+          <p class="eyebrow">LinkedIn</p>
+          <strong>/in/renataft-araujo</strong>
+        </a>
+        <a class="contact-cell" href="https://github.com/DS-RFTA" target="_blank" rel="noopener">
+          <p class="eyebrow">GitHub</p>
+          <strong>DS-RFTA</strong>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    © 2026 Renata Félix Trajano de Araújo · <span class="lang-pt-inline">Recife, PE — Brasil</span><span class="lang-en-inline">Recife, PE — Brazil</span>
+  </div>
+</footer>
+
+<script>
+/* =========================================================
+   DATA — edit here to add/remove/update projects & experience
+   ========================================================= */
+const PROJECTS = [
+  {
+    id: "p1",
+    category: "python",
+    title: { pt: "Análise e Automação com Python", en: "Data Analysis & Automation with Python" },
+    desc: {
+      pt: "Soluções para leitura, tratamento, transformação e análise de dados com Python, Pandas e NumPy, com geração de indicadores e automação de tarefas.",
+      en: "Solutions for reading, cleaning, transforming and analyzing data with Python, Pandas and NumPy, generating indicators and automating tasks."
+    },
+    tech: ["Python", "Pandas", "NumPy"],
+    link: "https://github.com/DS-RFTA",
+    featured: true
+  },
+  {
+    id: "p2",
+    category: "bi",
+    title: { pt: "Business Intelligence com Power BI", en: "Business Intelligence with Power BI" },
+    desc: {
+      pt: "Dashboards para acompanhamento de indicadores, análise de desempenho e identificação de oportunidades de negócio, com modelagem e transformação de dados.",
+      en: "Dashboards for tracking indicators, performance analysis and identifying business opportunities, including data modeling and transformation."
+    },
+    tech: ["Power BI", "Power Query", "DAX"],
+    link: "https://github.com/DS-RFTA",
+    featured: true
+  },
+  {
+    id: "p3",
+    category: "data-eng",
+    title: { pt: "Processamento e Integração de Dados", en: "Data Processing & Integration" },
+    desc: {
+      pt: "Projetos envolvendo SQL, ETL, tratamento e validação de dados, integração de fontes, utilizando Databricks e KNIME.",
+      en: "Projects involving SQL, ETL, data cleaning and validation, and source integration, using Databricks and KNIME."
+    },
+    tech: ["SQL", "ETL", "Databricks", "KNIME"],
+    link: "https://github.com/DS-RFTA",
+    featured: false
+  },
+  {
+    id: "p4",
+    category: "java",
+    title: { pt: "Aplicações em Java", en: "Java Applications" },
+    desc: {
+      pt: "Desenvolvimento de aplicações com Java aplicando lógica de programação, orientação a objetos, estruturas de dados e tratamento de exceções.",
+      en: "Java application development applying programming logic, OOP, data structures and exception handling."
+    },
+    tech: ["Java", "OOP", "Data Structures"],
+    link: "https://github.com/DS-RFTA",
+    featured: false
+  }
+];
+
+const CATEGORIES = [
+  { key: "all", pt: "Todos", en: "All" },
+  { key: "python", pt: "Python", en: "Python" },
+  { key: "bi", pt: "BI", en: "BI" },
+  { key: "data-eng", pt: "Data Engineering", en: "Data Eng." },
+  { key: "java", pt: "Java", en: "Java" }
+];
+
+const EXPERIENCE = [
+  {
+    role: { pt: "Analista de Planejamento de Demanda e Abastecimento", en: "Demand Planning & Supply Analyst" },
+    org: "Grupo Boticário — Franquia",
+    period: { pt: "Atual", en: "Current" },
+    bullets: {
+      pt: [
+        "Analisei dados de estoque, vendas, demanda e abastecimento para suporte à tomada de decisão.",
+        "Estruturei e acompanhei indicadores de desempenho e KPIs operacionais.",
+        "Desenvolvi dashboards e relatórios utilizando Power BI e Excel.",
+        "Analisei mais de 1.500 SKUs distribuídos em 13 pontos de venda.",
+        "Automatizei processos de tratamento e consolidação de dados, reduzindo atividades manuais."
+      ],
+      en: [
+        "Analyzed inventory, sales, demand and supply data to support decision-making.",
+        "Structured and tracked performance indicators and operational KPIs.",
+        "Built dashboards and reports using Power BI and Excel.",
+        "Analyzed over 1,500 SKUs across 13 points of sale.",
+        "Automated data-cleaning and consolidation processes, reducing manual work."
+      ]
+    }
+  },
+  {
+    role: { pt: "Analista de Compras Internacional Sênior / Supply Chain", en: "Senior International Purchasing Analyst / Supply Chain" },
+    org: "Biosystems NE Albalab",
+    period: "05/2021 – 02/2024",
+    bullets: {
+      pt: [
+        "Analisei indicadores de Supply Chain, lead time e custos de importação via ERP TOTVS Protheus.",
+        "Desenvolvi análises de inventário e controle de estoque de reagentes e equipamentos.",
+        "Estruturei relatórios gerenciais e análises financeiras e cambiais para negociações.",
+        "Identifiquei gargalos e oportunidades de melhoria em processos operacionais."
+      ],
+      en: [
+        "Analyzed Supply Chain KPIs, lead time and import costs via the TOTVS Protheus ERP.",
+        "Developed inventory and stock-control analyses for reagents and equipment.",
+        "Structured management reports and financial/FX analyses to support negotiations.",
+        "Identified bottlenecks and improvement opportunities in operational processes."
+      ]
+    }
+  },
+  {
+    role: { pt: "Analista de Importação Sênior / Operações", en: "Senior Import Analyst / Operations" },
+    org: "RForne Serviços Aduaneiros",
+    period: "12/2011 – 09/2015",
+    bullets: {
+      pt: [
+        "Extração, auditoria e cruzamento de dados regulatórios em sistemas aduaneiros.",
+        "Mapeei fluxos operacionais e acompanhei métricas de tempo, SLA e custos.",
+        "Estruturei controles de rastreabilidade e identificação de desvios logísticos."
+      ],
+      en: [
+        "Extracted, audited and cross-checked regulatory data in customs systems.",
+        "Mapped operational flows and tracked time, SLA and cost metrics.",
+        "Structured traceability controls and identified logistics deviations."
+      ]
+    }
+  },
+  {
+    role: { pt: "Coordenadora de Operações e Performance", en: "Operations & Performance Coordinator" },
+    org: "Lojão dos Games",
+    period: "07/2007 – 11/2010",
+    bullets: {
+      pt: [
+        "Analisei indicadores de performance comercial e comportamento do consumidor em múltiplas unidades.",
+        "Contribuí para aumento de 15% no faturamento por meio de análises e identificação de oportunidades.",
+        "Implementei controles de inventário e previsão de demanda, alcançando 98% de acuracidade de estoque.",
+        "Reduzi em 5% os custos operacionais por meio de análise e melhoria de processos."
+      ],
+      en: [
+        "Analyzed commercial performance and consumer-behavior indicators across multiple units.",
+        "Contributed to a 15% revenue increase through analysis and opportunity identification.",
+        "Implemented inventory controls and demand forecasting, reaching 98% inventory accuracy.",
+        "Reduced operating costs by 5% through process analysis and improvement."
+      ]
+    }
+  },
+  {
+    role: { pt: "Estagiária de Gestão de Processos e Informações", en: "Process & Information Management Intern" },
+    org: "Prefeitura da Cidade do Recife",
+    period: "10/2003 – 10/2005",
+    bullets: {
+      pt: [
+        "Análise e validação de dados cadastrais e fiscais, garantindo consistência das informações.",
+        "Estruturei fluxos de triagem e acompanhamento de processos administrativos.",
+        "Apoiei a identificação de inconsistências e melhoria dos processos internos."
+      ],
+      en: [
+        "Analyzed and validated registration and tax data, ensuring information consistency.",
+        "Structured triage and follow-up flows for administrative processes.",
+        "Supported identification of inconsistencies and internal process improvements."
+      ]
+    }
+  }
+];
+
+/* =========================================================
+   RENDER
+   ========================================================= */
+function renderProjects(filter = "all") {
+  const grid = document.getElementById("projectGrid");
+  grid.innerHTML = "";
+  PROJECTS.forEach(p => {
+    const card = document.createElement("article");
+    card.className = "project-card reveal";
+    card.dataset.category = p.category;
+    if (filter !== "all" && p.category !== filter) card.classList.add("hidden");
+    card.innerHTML = `
+      <div class="project-top">
+        <span class="project-cat">${p.category.replace('-', ' ')}</span>
+        ${p.featured ? '<span class="featured-badge">★</span>' : ''}
+      </div>
+      <h3><span class="lang-pt-inline">${p.title.pt}</span><span class="lang-en-inline">${p.title.en}</span></h3>
+      <p><span class="lang-pt-inline">${p.desc.pt}</span><span class="lang-en-inline">${p.desc.en}</span></p>
+      <div class="project-tags">${p.tech.map(t => `<span class="tag">${t}</span>`).join("")}</div>
+      <a class="project-link" href="${p.link}" target="_blank" rel="noopener">
+        <span class="lang-pt-inline">Ver no GitHub →</span><span class="lang-en-inline">View on GitHub →</span>
+      </a>
+    `;
+    grid.appendChild(card);
+  });
+  observeReveals();
+}
+
+function renderFilters() {
+  const el = document.getElementById("filters");
+  el.innerHTML = "";
+  CATEGORIES.forEach((c, i) => {
+    const btn = document.createElement("button");
+    btn.className = "filter-btn" + (i === 0 ? " active" : "");
+    btn.dataset.filter = c.key;
+    btn.innerHTML = `<span class="lang-pt-inline">${c.pt}</span><span class="lang-en-inline">${c.en}</span>`;
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      renderProjects(c.key);
+    });
+    el.appendChild(btn);
+  });
+}
+
+function renderExperience() {
+  const tl = document.getElementById("timeline");
+  tl.innerHTML = "";
+  EXPERIENCE.forEach(e => {
+    const period = typeof e.period === "string" ? { pt: e.period, en: e.period } : e.period;
+    const item = document.createElement("div");
+    item.className = "tl-item reveal";
+    item.innerHTML = `
+      <div class="tl-head">
+        <span class="tl-role"><span class="lang-pt-inline">${e.role.pt}</span><span class="lang-en-inline">${e.role.en}</span></span>
+        <span class="tl-period"><span class="lang-pt-inline">${period.pt}</span><span class="lang-en-inline">${period.en}</span></span>
+      </div>
+      <div class="tl-org">${e.org}</div>
+      <ul>
+        ${e.bullets.pt.map((b, i) => `<li class="lang-pt-inline">${b}</li><li class="lang-en-inline">${e.bullets.en[i]}</li>`).join("")}
+      </ul>
+    `;
+    tl.appendChild(item);
+  });
+  observeReveals();
+}
+
+/* =========================================================
+   INTERACTIONS: theme, language, nav, reveal-on-scroll
+   ========================================================= */
+const themeToggle = document.getElementById("themeToggle");
+const langToggle = document.getElementById("langToggle");
+const navToggle = document.getElementById("navToggle");
+const navLinks = document.getElementById("navLinks");
+
+function applyTheme(theme) {
+  document.body.classList.toggle("light", theme === "light");
+  themeToggle.textContent = theme === "light" ? "☀️" : "🌙";
+  localStorage.setItem("rfta-theme", theme);
+}
+const savedTheme = localStorage.getItem("rfta-theme") ||
+  (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+applyTheme(savedTheme);
+themeToggle.addEventListener("click", () => {
+  applyTheme(document.body.classList.contains("light") ? "dark" : "light");
+});
+
+function applyLang(lang) {
+  document.body.classList.toggle("is-en", lang === "en");
+  document.documentElement.lang = lang === "en" ? "en" : "pt-BR";
+  langToggle.textContent = lang === "en" ? "PT" : "EN";
+  localStorage.setItem("rfta-lang", lang);
+}
+const savedLang = localStorage.getItem("rfta-lang") || "pt";
+applyLang(savedLang);
+langToggle.addEventListener("click", () => {
+  applyLang(document.body.classList.contains("is-en") ? "pt" : "en");
+});
+
+navToggle.addEventListener("click", () => {
+  const open = navLinks.classList.toggle("open");
+  navToggle.setAttribute("aria-expanded", open);
+});
+document.querySelectorAll("#navLinks a").forEach(a => {
+  a.addEventListener("click", () => navLinks.classList.remove("open"));
+});
+
+function observeReveals() {
+  const els = document.querySelectorAll(".reveal:not(.visible), .project-card:not(.visible)");
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(en => {
+      if (en.isIntersecting) {
+        en.target.classList.add("visible");
+        io.unobserve(en.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  els.forEach(el => io.observe(el));
+}
+
+/* active nav link on scroll */
+const sections = document.querySelectorAll("main section[id]");
+const navA = document.querySelectorAll('.nav-links a[data-nav]');
+const navObserver = new IntersectionObserver((entries) => {
+  entries.forEach(en => {
+    if (en.isIntersecting) {
+      navA.forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + en.target.id));
+    }
+  });
+}, { rootMargin: "-40% 0px -50% 0px" });
+sections.forEach(s => navObserver.observe(s));
+
+/* init */
+renderFilters();
+renderProjects();
+renderExperience();
+</script>
+
+</body>
+</html>
